@@ -1,0 +1,26 @@
+{
+  "name": "wagestreamafrica",
+  "version": "1.0.0",
+  "description": "On-demand earned wage access for African gig workers, powered by Stellar blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dataguru-Labs/wagestreamafrica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dataguru-Labs/wagestreamafrica/issues"
+  },
+  "homepage": "https://github.com/Dataguru-Labs/wagestreamafrica#readme",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^15.1.0",
+    "dotenv": "^17.4.2",
+    "node-fetch": "^2.7.0"
+  }
+}
