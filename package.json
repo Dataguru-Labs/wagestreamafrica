@@ -4,7 +4,7 @@
   "description": "On-demand earned wage access for African gig workers, powered by Stellar blockchain",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "@stellar/stellar-sdk": "^15.1.0",
     "dotenv": "^17.4.2",
     "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
   }
 }
