@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Worker Registration - WageStream Africa</title>
+    <link rel="stylesheet" href="./worker-registration.css" />
+  </head>
+  <body>
+    <main class="registration-shell">
+      <section class="registration-panel" aria-labelledby="registration-title">
+        <div class="registration-copy">
+          <p class="eyebrow">Worker onboarding</p>
+          <h1 id="registration-title">Register a worker profile</h1>
+          <p>
+            Capture the minimum worker details needed before recording daily wage
+            data and future wage advance activity.
+          </p>
+        </div>
+
+        <form class="worker-form" action="#" method="post">
+          <label class="field" for="worker-name">
+            <span>Worker name</span>
+            <input
+              id="worker-name"
+              name="workerName"
+              type="text"
+              autocomplete="name"
+              placeholder="Adebola Okafor"
+              required
+            />
+          </label>
+
+          <label class="field" for="daily-wage-rate">
+            <span>Daily wage rate</span>
+            <input
+              id="daily-wage-rate"
+              name="dailyWageRate"
+              type="number"
+              min="0"
+              step="0.01"
+              inputmode="decimal"
+              placeholder="15.00"
+              required
+            />
+          </label>
+
+          <label class="field" for="job-type">
+            <span>Job type</span>
+            <select id="job-type" name="jobType" required>
+              <option value="">Select job type</option>
+              <option value="bolt-driver">Bolt driver</option>
+              <option value="dispatch-rider">Dispatch rider</option>
+              <option value="trader">Trader</option>
+            </select>
+          </label>
+
+          <button class="submit-button" type="submit">Register worker</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

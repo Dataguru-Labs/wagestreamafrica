@@ -33,8 +33,19 @@ via the Stellar blockchain — no loan sharks, no waiting, no banks needed.
 - **Blockchain:** Stellar Network (Testnet + Mainnet)
 - **Smart Transactions:** Stellar SDK (JavaScript)
 - **Backend:** Node.js
-- **Frontend:** React (coming soon)
+- **Frontend:** Static HTML/CSS worker registration form
 - **Environment:** dotenv
+
+## Worker Registration Form
+
+Open `public/worker-registration.html` in a browser to view the worker registration form.
+
+The form captures:
+
+- Worker name
+- Daily wage rate
+- Job type: Bolt driver, dispatch rider, or trader
+- Submit action for future registration wiring
 
 ## 🚀 Getting Started
 
