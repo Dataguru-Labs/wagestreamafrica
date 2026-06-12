@@ -39,3 +39,35 @@ via the Stellar blockchain — no loan sharks, no waiting, no banks needed.
 ## 🚀 Getting Started
 
 1. Clone the repo:
+
+```bash
+git clone https://github.com/Dataguru-Labs/wagestreamafrica.git
+cd wagestreamafrica
+npm install
+cp .env.example .env
+```
+
+2. Configure the Stellar testnet accounts in `.env`:
+
+```bash
+STELLAR_NETWORK=testnet
+HORIZON_URL=https://horizon-testnet.stellar.org
+PUBLIC_KEY=your_employer_public_key_here
+SECRET_KEY=your_employer_secret_key_here
+WORKER_PUBLIC_KEY=worker_stellar_public_key_here
+USDC_ISSUER=GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5
+```
+
+3. Make sure the employer account holds testnet USDC and the worker account has
+   a trustline for the same USDC issuer.
+
+4. Run the demo:
+
+```bash
+npm start
+```
+
+`requestWageAdvance` now sends a Stellar USDC payment from the employer float to
+the worker account, validates the employer USDC balance before submitting, and
+stores the disbursement record in the same transaction with a `manageData`
+operation.
